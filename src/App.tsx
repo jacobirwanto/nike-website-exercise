@@ -3,6 +3,7 @@ import { SHOE_LIST } from "./components/Constant";
 import Nav from "./components/Nav";
 import NewArrivalsSection from "./components/NewArrivalsSection";
 import ShoeDetail from "./components/ShoeDetail";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Nav />
       <ShoeDetail />
       <NewArrivalsSection items={SHOE_LIST} />
+      <Sidebar />
     </div>
   );
 }
