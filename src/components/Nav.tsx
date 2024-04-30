@@ -15,7 +15,7 @@ function Nav() {
 
       <button
         onClick={() => setMobile(!isMobile)}
-        className="focus:ring-2 focus:ring-gray-500 p-2 rounded-lg hover:bg-gray-100 lg:hidden"
+        className="btn-anim focus:ring-2 focus:ring-gray-500 p-2 rounded-lg hover:bg-gray-100 lg:hidden"
       >
         <RxHamburgerMenu size={25} />
       </button>
@@ -44,7 +44,7 @@ function Nav() {
       </div>
 
       <div className="fixed bottom-4 left-4 lg:static lg:mr-8">
-        <div className="h-12 w-12 rounded-full bg-white shadow-md flex-center cursor-pointer">
+        <div className="btn-anim h-12 w-12 rounded-full bg-white shadow-md flex-center cursor-pointer">
           <TbShoppingBag />
         </div>
       </div>
