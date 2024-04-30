@@ -16,7 +16,7 @@ function SelectBox({ title, options }: { title: string; options: number[] }) {
           </option>
         ))}
       </select>
-      <div className="absolute inset-y-0 right-0 pr-3 flex-center">
+      <div className="pointer-events-none absolute inset-y-0 right-0 pr-3 flex-center">
         <IoIosArrowDown />
       </div>
     </div>
