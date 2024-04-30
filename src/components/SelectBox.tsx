@@ -10,7 +10,7 @@ function SelectBox({ title, options }: { title: string; options: number[] }) {
         <option value="" disabled hidden>
           {title}
         </option>
-        {options.map((option, index) => (
+        {options.map((option) => (
           <option value={option} key={option}>
             {option}
           </option>
