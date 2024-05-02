@@ -1,11 +1,15 @@
 import { TbShoppingBag } from "react-icons/tb";
 import NikeLogo from "../assets/nike-logo.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const routes: string[] = ["Home", "About", "Services", "Pricing", "Contact"];
 
-function Nav() {
+function Nav({
+  onClickShopping,
+}: {
+  onClickShopping: React.MouseEventHandler;
+}) {
   const [isMobile, setMobile] = useState<boolean>(false);
   return (
     <nav className="flex flex-wrap justify-between items-center z-10 relative">
@@ -43,7 +47,10 @@ function Nav() {
         </ul>
       </div>
 
-      <div className="fixed bottom-4 left-4 lg:static lg:mr-8">
+      <div
+        onClick={onClickShopping}
+        className="fixed bottom-4 left-4 lg:static lg:mr-8"
+      >
         <div className="btn-anim h-12 w-12 rounded-full bg-white shadow-md flex-center cursor-pointer">
           <TbShoppingBag />
         </div>
